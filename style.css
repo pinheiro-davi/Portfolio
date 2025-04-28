@@ -1,0 +1,373 @@
+/*Estilização Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Configurando a fonte Montserrat do Google Fonts */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Corpo */
+body {
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    padding: 0rem 3rem;
+}
+
+/* Estilização do Cabeçalho */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilização do texto em destaque no cabeçalho */
+.header-container span {
+    color: #a3af9e;
+}
+
+/* Posicionamento da Logo */
+.logo {
+    margin-right: auto;
+    justify-content: flex-start;
+    transition: .2s;
+}
+
+/* Estilização da Logo */
+.logo a {
+    text-decoration: none;
+    color: #415c37;
+}
+
+/* Estilização da Logo durante interações com o mouse */
+.logo:hover {
+    cursor: pointer;
+    filter: drop-shadow(0rem 0rem 0.2rem #415c37);
+    transition: .2s;
+}
+
+/* Estilização dos links contidos no cabeçalho */
+header .menu a {
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    color: #f0eee3;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Estilização dos links destacados durante interações com o mouse */
+header .menu a:hover {
+    color: #a3af9e;
+    background-color: #202020;
+    transition: .2s;
+}
+
+/* Estilização da lista contida no cabeçalho */
+header nav ul{
+    list-style-type: none;
+}
+
+/* Estilização dos itens da lista */
+header nav ul li{
+    display: inline-block;
+    padding: 1rem;
+}
+
+/* Estilização da tela inicial */
+section.inicio {
+    padding: 4.5rem 3rem;
+}
+
+/* Estilização dos itens contidos na tela inicial */
+section.inicio .main-container {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilização do texto da página inicial */
+.texto-inicio {
+    margin-right: auto;
+    color: #f0eee3;
+    font-size: 1.8rem;
+}
+
+/* Estilização do nome destacado na página inicial */
+.texto-inicio h1 {
+    font-size: 3.5rem;
+}
+
+/* Estilização do subtítulo destacado na página inicial */
+.texto-inicio h3 span {
+    color: #415c37;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Estilização do texto descritivo da página inicial */
+.texto-inicio p {
+    margin: 3rem 0;
+    font-size: 1.8rem;
+}
+
+/* Estilização do botão currículo */
+.curriculo button {
+    align-items: center;
+    justify-content: center;
+    background-color: #415c37;
+    color: #181818;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Estilização do botão currículo durante interações com o mouse */
+.curriculo button:hover {
+    box-shadow: 0rem 0rem 0.7rem #415c37;
+    transition: .2s;
+}
+
+/* Posicionamento da imagem da tela inicial */
+.imagem-inicio {
+    margin-left: auto;
+}
+
+/* Estilização da imagem da tela inicial */
+.imagem-davi {
+    margin-left: auto;
+    width: 30rem;
+    height: 39rem;
+    transition: .5s;
+}
+
+/* Estilização da imagem durante interações com o mouse */
+.imagem-davi:hover {
+    cursor: pointer;
+    filter: drop-shadow(0rem 0rem 1.3rem #4A6640);
+    transition: .5s;
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    padding: 0 3rem;
+}
+
+/* Estilização do rodapé */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização da estrutura dos contatos no rodapé */
+.contatos {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Estilização dos ícones dos contatos */
+/* Para criar o efeito 'filter' correto para a cor desejada, utilizei esse site: https://isotropic.co/tool/hex-color-to-css-filter/ */
+/* SVGs estão sendo filtrados para ficar com a cor de código #415c37 */
+.contatos img{
+    filter: invert(30%) sepia(13%) saturate(1453%) hue-rotate(59deg) brightness(93%) contrast(81%);
+    width: 3rem;
+    height: auto;
+    transition: .2s;
+}
+
+/* Estilização dos ícones dos contatos durante interações com o mouse */
+/* Cor: #a3af9e */
+.contatos img:hover {
+    filter: invert(73%) sepia(17%) saturate(191%) hue-rotate(58deg) brightness(91%) contrast(91%);
+    transform: translateY(-0.3rem);
+    transition: .2s;
+}
+
+/* ============================================= TELA DE COMPETÊNCIAS ============================================= */
+/* Estilização da tela de competências */
+section.competencias {
+    padding: 0.5rem 3rem;
+}
+
+/* Estilização das duas partes contidas na tela de competências */
+section.competencias .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilização do título destacado na parte das competências */
+.texto-competencias h3 {
+    color: #415c37;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 3rem 0;
+}
+
+/* Estilização do texto descritivo na parte das competências */
+.texto-competencias {
+    text-align: justify;
+    margin-right: 5.5rem;
+    color: #f0eee3;
+    font-size: 1.8rem;
+}
+
+
+/* Estilização da parte direita da tela de competências (ferramentas) */
+.ferramentas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Estilização da caixa das ferramentas */
+.caixa {
+    display: grid;
+    text-align: center;
+    color: #f0eee3;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    border-color: #202020;
+    border-style:solid;
+    background-color: #131313;
+    transition: .2s;
+}
+
+/* Estilização das caixas durante interações com o mouse */
+.caixa:hover {
+    box-shadow: 0rem 0rem 1rem #415c37;
+    border-color: #415c37;
+    transition: .2s;
+}
+
+/* Estilização dos títulos das caixas */
+.caixa h3 {
+    color: #415c37;
+    font-weight: 600;
+}
+
+/* Estilização do posicionamento dos ícones */
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 1rem;
+}
+
+/* Estilização dos ícones das ferramentas */
+/* Cor: #f0eee3 */
+.icones img {
+    filter: invert(97%) sepia(7%) saturate(316%) hue-rotate(354deg) brightness(102%) contrast(88%);
+    width: 6rem;
+    padding: 0.3rem;
+    height: auto;
+    transition: .2s;
+}
+
+/* Estilização dos ícones das ferramentas durante interações com o mouse */
+/* Cor: #a3af9e */
+.icones img:hover {
+    filter: invert(73%) sepia(17%) saturate(191%) hue-rotate(58deg) brightness(91%) contrast(91%);
+    transition: .2s;
+    cursor: pointer;
+}
+
+/* ============================================= TELA DE PROJETOS ============================================= */
+/* Estilização da tela de projetos */
+section.projetos {
+    padding: 4rem 3rem;
+}
+
+/* Estilização e posicionamento dos itens da tela de projetos */
+section.projetos .main-container {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilização e posicionamento da lista de caixas de projetos */
+.caixas-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
+}
+
+/* Estilização individual das caixas de projetos */
+.caixas-projetos .caixa {
+    height: 100%;
+    align-content: baseline;
+}
+
+/* Estilização das caixas dos projetos durante interações com o mouse */
+.caixas-projetos .caixa:hover {
+    transform: scale(1.08);
+}
+
+/* Estilização das imagens contidas nas caixas dos projetos */
+.img-projeto img{
+    padding: 2rem 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilização dos textos das caixas de projetos */
+.caixas-projetos p {
+    text-align: justify;
+}
+
+/* ============================================= TELA SOBRE ============================================= */
+/* Estilização da tela Sobre */
+section.sobre {
+    padding: 5rem 3rem;
+}
+
+/* Estilização dos itens contidos na tela Sobre */
+section.sobre .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilização do texto do título da tela Sobre */
+section.sobre .main-container h3 {
+    color:#415c37;
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+/* Estilização do texto principal da tela Sobre */
+section.sobre .main-container p {
+    color: #f0eee3;
+    padding: 3rem 0;
+    text-align: justify;
+    font-size: 1.7rem;
+    margin: 0 15rem;
+}
